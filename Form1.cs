@@ -20,35 +20,15 @@ namespace Generate_Numbers_Letters_Special_Characters
 
         public static Random random = new Random();
        
-        int RandomNumber(int from , int to)
-        {
-            return random.Next(from, to);
-        }
-        
         private void GenerateNumbers(int Count)
         {
-            if (Count == 1)
-            {
-                txtGenerated.Text = RandomNumber(1, 9).ToString();
-            } else if (Count == 2)
-            {
-                txtGenerated.Text = RandomNumber(10, 99).ToString();
-            }
-            else if (Count == 3)
-            {
-                txtGenerated.Text = RandomNumber(100, 999).ToString();
-            }
-            else if (Count == 4)
-                txtGenerated.Text = random.Next(1000, 9999).ToString();
-            else
-            {
-                txtGenerated.Text = random.Next(10000, 99999).ToString();
-            }
-
+            int minRange = (int)Math.Pow(10, Count - 1);
+            int maxRange = (int)Math.Pow(10, Count) - 1;
+            txtGenerated.Text = random.Next(minRange, maxRange).ToString();
         }
         private char GenerateCharacter()
         {
-         return ((char)RandomNumber(65,90));
+         return ((char)random.Next(65,90));
         }
         private void GenerateCharacters(int Count)
         {
@@ -61,7 +41,7 @@ namespace Generate_Numbers_Letters_Special_Characters
         }
         private char GenerateSpecialCharacter()
         {
-            return ((char)RandomNumber(33, 47));
+            return ((char)random.Next(33, 47));
         }
         private void GenerateSpecialCharacters(int Count)
         {
@@ -72,11 +52,13 @@ namespace Generate_Numbers_Letters_Special_Characters
             }
             txtGenerated.Text = SpecialCharacters;
         }
-        private void GenerateMixes(int Count)
-        {
-        }
         private void llCopy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (string.IsNullOrEmpty(txtGenerated.Text))
+            {
+                MessageBox.Show("There is no Text to Copy", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Clipboard.SetText(txtGenerated.Text);
             MessageBox.Show("The Text has been Copied","Copied",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
@@ -96,11 +78,6 @@ namespace Generate_Numbers_Letters_Special_Characters
             if (rbSpecialCharacters.Checked)
             {
                 GenerateSpecialCharacters(Count);
-            }
-
-            if (rbMix.Checked)
-            {
-                GenerateMixes(Count);
             }
         }
         private void btnReset_Click(object sender, EventArgs e)

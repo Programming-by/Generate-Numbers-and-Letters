@@ -31,14 +31,13 @@
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.gbInfo = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.rbLetters = new System.Windows.Forms.RadioButton();
+            this.rbSpecialCharacters = new System.Windows.Forms.RadioButton();
             this.rbNumbers = new System.Windows.Forms.RadioButton();
+            this.rbLetters = new System.Windows.Forms.RadioButton();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.llCopy = new System.Windows.Forms.LinkLabel();
             this.txtGenerated = new System.Windows.Forms.TextBox();
-            this.rbSpecialCharacters = new System.Windows.Forms.RadioButton();
-            this.rbMix = new System.Windows.Forms.RadioButton();
             this.btnOptions = new System.Windows.Forms.Button();
             this.gbInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -66,7 +65,6 @@
             // 
             // gbInfo
             // 
-            this.gbInfo.Controls.Add(this.rbMix);
             this.gbInfo.Controls.Add(this.rbSpecialCharacters);
             this.gbInfo.Controls.Add(this.rbNumbers);
             this.gbInfo.Controls.Add(this.rbLetters);
@@ -78,15 +76,40 @@
             this.gbInfo.TabIndex = 2;
             this.gbInfo.TabStop = false;
             // 
-            // label1
+            // rbSpecialCharacters
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Number Of Digits:";
+            this.rbSpecialCharacters.AutoSize = true;
+            this.rbSpecialCharacters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSpecialCharacters.Location = new System.Drawing.Point(20, 116);
+            this.rbSpecialCharacters.Name = "rbSpecialCharacters";
+            this.rbSpecialCharacters.Size = new System.Drawing.Size(173, 24);
+            this.rbSpecialCharacters.TabIndex = 5;
+            this.rbSpecialCharacters.Text = "Special Characters";
+            this.rbSpecialCharacters.UseVisualStyleBackColor = true;
+            // 
+            // rbNumbers
+            // 
+            this.rbNumbers.AutoSize = true;
+            this.rbNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNumbers.Location = new System.Drawing.Point(209, 75);
+            this.rbNumbers.Name = "rbNumbers";
+            this.rbNumbers.Size = new System.Drawing.Size(98, 24);
+            this.rbNumbers.TabIndex = 4;
+            this.rbNumbers.Text = "Numbers";
+            this.rbNumbers.UseVisualStyleBackColor = true;
+            // 
+            // rbLetters
+            // 
+            this.rbLetters.AutoSize = true;
+            this.rbLetters.Checked = true;
+            this.rbLetters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbLetters.Location = new System.Drawing.Point(20, 75);
+            this.rbLetters.Name = "rbLetters";
+            this.rbLetters.Size = new System.Drawing.Size(83, 24);
+            this.rbLetters.TabIndex = 3;
+            this.rbLetters.TabStop = true;
+            this.rbLetters.Text = "Letters";
+            this.rbLetters.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
@@ -110,28 +133,15 @@
             0,
             0});
             // 
-            // rbLetters
+            // label1
             // 
-            this.rbLetters.AutoSize = true;
-            this.rbLetters.Checked = true;
-            this.rbLetters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbLetters.Location = new System.Drawing.Point(20, 75);
-            this.rbLetters.Name = "rbLetters";
-            this.rbLetters.Size = new System.Drawing.Size(83, 24);
-            this.rbLetters.TabIndex = 3;
-            this.rbLetters.Text = "Letters";
-            this.rbLetters.UseVisualStyleBackColor = true;
-            // 
-            // rbNumbers
-            // 
-            this.rbNumbers.AutoSize = true;
-            this.rbNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNumbers.Location = new System.Drawing.Point(209, 75);
-            this.rbNumbers.Name = "rbNumbers";
-            this.rbNumbers.Size = new System.Drawing.Size(98, 24);
-            this.rbNumbers.TabIndex = 4;
-            this.rbNumbers.Text = "Numbers";
-            this.rbNumbers.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Number Of Digits:";
             // 
             // llCopy
             // 
@@ -153,28 +163,6 @@
             this.txtGenerated.ReadOnly = true;
             this.txtGenerated.Size = new System.Drawing.Size(339, 141);
             this.txtGenerated.TabIndex = 4;
-            // 
-            // rbSpecialCharacters
-            // 
-            this.rbSpecialCharacters.AutoSize = true;
-            this.rbSpecialCharacters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSpecialCharacters.Location = new System.Drawing.Point(20, 116);
-            this.rbSpecialCharacters.Name = "rbSpecialCharacters";
-            this.rbSpecialCharacters.Size = new System.Drawing.Size(173, 24);
-            this.rbSpecialCharacters.TabIndex = 5;
-            this.rbSpecialCharacters.Text = "Special Characters";
-            this.rbSpecialCharacters.UseVisualStyleBackColor = true;
-            // 
-            // rbMix
-            // 
-            this.rbMix.AutoSize = true;
-            this.rbMix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMix.Location = new System.Drawing.Point(209, 116);
-            this.rbMix.Name = "rbMix";
-            this.rbMix.Size = new System.Drawing.Size(56, 24);
-            this.rbMix.TabIndex = 6;
-            this.rbMix.Text = "Mix";
-            this.rbMix.UseVisualStyleBackColor = true;
             // 
             // btnOptions
             // 
@@ -219,7 +207,6 @@
         private System.Windows.Forms.LinkLabel llCopy;
         private System.Windows.Forms.TextBox txtGenerated;
         private System.Windows.Forms.RadioButton rbSpecialCharacters;
-        private System.Windows.Forms.RadioButton rbMix;
         private System.Windows.Forms.Button btnOptions;
     }
 }
