@@ -1,0 +1,11 @@
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\bin\Debug\Generate Numbers Letters Special Characters.exe.config
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\bin\Debug\Generate Numbers Letters Special Characters.exe
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\bin\Debug\Generate Numbers Letters Special Characters.pdb
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate_Numbers_Letters_Special_Characters.Form1.resources
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate_Numbers_Letters_Special_Characters.Properties.Resources.resources
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.exe
+C:\Users\User\Source\Repos\Generate Numbers Letters Special Characters\obj\Debug\Generate Numbers Letters Special Characters.pdb
